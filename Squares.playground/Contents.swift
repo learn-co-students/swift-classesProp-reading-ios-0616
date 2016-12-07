@@ -26,7 +26,9 @@ square2.area
 
 var square5 = Square(topLeftCorner: (8.0, 7.0), lengthOfSide: 15.0)
 print("Area is \(square5.area)")
+print(square5.lengthOfSide)     // 15.0
 square5.lengthOfSide = 9.7
+print(square5.lengthOfSide)     // 9.7
 print("Area is \(square5.area)")
 
 
@@ -51,5 +53,7 @@ class Square2 {
 
 var square6 = Square2(topLeftCorner: (10.0, 10.0), lengthOfSide: 10.0)
 print("Area is 100.0? \(square6.area)")
+print(square6.lengthOfSide)     // 10.0
 square6.area = 144.0
+print(square6.lengthOfSide)     // 12.0
 print("Length of side is 12.0? \(square6.lengthOfSide)")
