@@ -12,6 +12,7 @@ class Square {
         self.lengthOfSide = lengthOfSide
     }
 }
+// Computed properties must be declared as a variable even though their value can't be changed.
 
 let square1 = Square(topLeftCorner: (0.0, 0.0), lengthOfSide: 10.0)
 let square2 = Square(topLeftCorner: (5.5, 7.25), lengthOfSide: 9.5)
@@ -48,6 +49,8 @@ class Square2 {
         self.lengthOfSide = lengthOfSide
     }
 }
+
+// Get is a read-only and Set writes. 
 
 var square6 = Square2(topLeftCorner: (10.0, 10.0), lengthOfSide: 10.0)
 print("Area is 100.0? \(square6.area)")
